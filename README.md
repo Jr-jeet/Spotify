@@ -13,4 +13,7 @@ rename column `Country of Origin` to Country_of_Origin;
 ALTER table spotify.`spotify streaming performance dataset`
 rename column `Primary Language` to Primary_Language;
 
-rename table spotify.`spotify streaming performance dataset` to streaming;
+use spotify;
+rename table `spotify streaming performance dataset`
+to streaming;
+
