@@ -17,3 +17,42 @@ use spotify;
 rename table `spotify streaming performance dataset`
 to streaming;
 
+ALTER table `streaming` 
+rename column `Primary Genre` to Primary_Genre;
+
+
+ALTER table `streaming` 
+rename column `Artist Type` to Artist_Type;
+
+SELECT * FROM streaming  limit 10;
+
+
+
+
+
+ALTER table `streaming`
+rename column `Debut Year` to Debut_Year;
+
+alter table `streaming`
+rename column `Total Streams (in millions)`  to  Total_Streams;
+
+alter table `streaming`
+rename column `Lead Streams (in millions)`  to  Lead_Streams;
+
+alter table `streaming`
+rename column `Feature Streams (in millions)`  to  Feature_Streams;
+
+alter table `streaming`
+rename column `Solo Streams (in millions)`  to  Solo_Streams;
+
+alter table `streaming`
+rename column `% of Solo Streams`  to  percentage_of_Solo_Streams;
+
+alter table `streaming`
+rename column `Collaborative Streams (in millions)`  to  Collaborative_Streams;
+
+alter table `streaming`
+rename column `% of Collaborative Streams`  to  precentage_of_Collaborative_Streams;
+
+#Here all the column now be ok#
+
