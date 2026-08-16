@@ -56,3 +56,5 @@ rename column `% of Collaborative Streams`  to  precentage_of_Collaborative_Stre
 
 #Here all the column now be ok#
 
+use spotify;
+select * from streaming limit 10;
