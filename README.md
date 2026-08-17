@@ -85,10 +85,24 @@ group by Debut_Year
 order by count(*) DESC;
 
 
-select count(*),Debut_Year
-from streaming
-group by Debut_Year
-order by count(*) DESC;
+select artist_name, max(total stream) limit 10,
+from streaming;
+
+
+SELECT Artist_Name, Total_Streams
+FROM streaming
+ORDER BY Total_Streams DESC
+LIMIT 10;
+
+SELECT Artist_Name, Total_Streams
+FROM streaming
+WHERE Total_Streams = (SELECT MAX(Total_Streams) FROM streaming);
+
+
+select Artist_Name,
+
+
+
 
 
 
