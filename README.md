@@ -85,21 +85,19 @@ group by Debut_Year
 order by count(*) DESC;
 
 
-select artist_name, max(total stream) limit 10,
-from streaming;
-
-
 SELECT Artist_Name, Total_Streams
 FROM streaming
 ORDER BY Total_Streams DESC
 LIMIT 10;
 
-SELECT Artist_Name, Total_Streams
-FROM streaming
-WHERE Total_Streams = (SELECT MAX(Total_Streams) FROM streaming);
+
+select Artist_Name as AR,Solo_Streams,Collaborative_Streams
+from streaming
+where percentage_of_Solo_Streams <= precentage_of_Collaborative_Streams 
+order by  Collaborative_Streams DESC 
+;
 
 
-select Artist_Name,
 
 
 
