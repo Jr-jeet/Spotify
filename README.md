@@ -83,3 +83,12 @@ select count(*),Debut_Year
 from streaming
 group by Debut_Year
 order by count(*) DESC;
+
+
+select count(*),Debut_Year
+from streaming
+group by Debut_Year
+order by count(*) DESC;
+
+
+
