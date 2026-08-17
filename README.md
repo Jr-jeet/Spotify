@@ -1,4 +1,8 @@
 # Spotify 
+
+<img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/fb8d75fd-09c7-483c-b6bc-729a44b2a4b1" />
+
+
 select * from spotify.`spotify streaming performance dataset` limit 10;
 
 
