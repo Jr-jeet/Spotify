@@ -101,4 +101,25 @@ where percentage_of_Solo_Streams <= precentage_of_Collaborative_Streams
 order by  Collaborative_Streams DESC 
 ;
 
+# SUM OF MOST GENRE GENERATE THE MOST TOTAL STREAMS?
+select  Primary_Genre,sum(Total_Streams)
+from streaming
+group by Primary_Genre
+order by  sum(Total_Streams) DESC 
+;
+
+# MAX GENRE GENERATE THE MOST TOTAL STREAMS?
+select  Primary_Genre,MAX(Total_Streams)
+from streaming
+group by Primary_Genre
+order by  MAX(Total_Streams) DESC 
+;
+
+# WHICH GENRES HAS THE HIGHESTT % OF COLLABRATIVE STEAMS?
+select  Primary_Genre, sum(Collaborative_Streams)
+from streaming
+where percentage_of_Solo_Streams <= precentage_of_Collaborative_Streams
+group by Primary_Genre
+order by sum(Collaborative_Streams) DESC
+;
 
