@@ -2,7 +2,7 @@
 
 <img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/fb8d75fd-09c7-483c-b6bc-729a44b2a4b1" />
 
-
+# Identifying the data
 select * from spotify.`spotify streaming performance dataset` limit 10;
 
 
@@ -120,6 +120,19 @@ select  Primary_Genre, avg(precentage_of_Collaborative_Streams) as avg_precentag
 from streaming
 group by Primary_Genre
 order by avg_precentage_of_Collaborative_Streams DESC
+;
+
+# which type  of artist 
+select count(Primary_Genre),Artist_Type
+from streaming
+group by Artist_Type
+;
+
+#  MOST LEAD STREAMING ARTIST NAME
+select max(Lead_Streams),Artist_Name
+from streaming
+group by Artist_Name
+order by max(Lead_Streams) DESC
 ;
 
 
