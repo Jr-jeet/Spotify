@@ -116,10 +116,12 @@ order by  MAX(Total_Streams) DESC
 ;
 
 # WHICH GENRES HAS THE HIGHESTT % OF COLLABRATIVE STEAMS?
-select  Primary_Genre, sum(Collaborative_Streams)
+select  Primary_Genre, avg(precentage_of_Collaborative_Streams) as avg_precentage_of_Collaborative_Streams
 from streaming
-where percentage_of_Solo_Streams <= precentage_of_Collaborative_Streams
 group by Primary_Genre
-order by sum(Collaborative_Streams) DESC
+order by avg_precentage_of_Collaborative_Streams DESC
 ;
+
+
+
 
