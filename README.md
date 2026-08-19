@@ -6,17 +6,25 @@
 select * from spotify.`spotify streaming performance dataset` limit 10;
 
 
-
+# Changing the column names 
 alter table spotify.`spotify streaming performance dataset` 
 change `Artist Name` Artist_Name text
 
 
+# Changing the column names 
+
 ALTER table spotify.`spotify streaming performance dataset`
 rename column `Country of Origin` to Country_of_Origin;
+
+
+# Changing the column names 
 
 ALTER table spotify.`spotify streaming performance dataset`
 rename column `Primary Language` to Primary_Language;
 
+
+
+# Changing the table names 
 use spotify;
 rename table `spotify streaming performance dataset`
 to streaming;
