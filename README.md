@@ -29,6 +29,7 @@ use spotify;
 rename table `spotify streaming performance dataset`
 to streaming;
 
+# Changing the column names
 ALTER table `streaming` 
 rename column `Primary Genre` to Primary_Genre;
 
