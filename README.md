@@ -42,7 +42,7 @@ SELECT * FROM streaming  limit 10;
 
 
 
-
+# Changing the column names
 ALTER table `streaming`
 rename column `Debut Year` to Debut_Year;
 
