@@ -149,9 +149,4 @@ group by Artist_Type
 select max(Lead_Streams),Artist_Name
 from streaming
 group by Artist_Name
-order by max(Lead_Streams) DESC
-;
-
-
-
-
+order by max(Lead_Streams) DESC ;
