@@ -137,8 +137,7 @@ order by  MAX(Total_Streams) DESC
 select  Primary_Genre, avg(precentage_of_Collaborative_Streams) as avg_precentage_of_Collaborative_Streams
 from streaming
 group by Primary_Genre
-order by avg_precentage_of_Collaborative_Streams DESC
-;
+order by avg_precentage_of_Collaborative_Streams DESC;
 
 # which type  of artist 
 select count(Primary_Genre),Artist_Type
