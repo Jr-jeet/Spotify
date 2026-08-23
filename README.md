@@ -139,14 +139,15 @@ from streaming
 group by Primary_Genre
 order by avg_precentage_of_Collaborative_Streams DESC;
 
-# which type  of artist 
-select count(Primary_Genre),Artist_Type
-from streaming
-group by Artist_Type
-;
 
 #  MOST LEAD STREAMING ARTIST NAME
 select max(Lead_Streams),Artist_Name
 from streaming
 group by Artist_Name
 order by max(Lead_Streams) DESC ;
+
+# which type  of artist 
+select count(Primary_Genre),Artist_Type
+from streaming
+group by Artist_Type
+;
