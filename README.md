@@ -148,3 +148,5 @@ select count(Primary_Genre),Artist_Type
 from streaming
 group by Artist_Type
 ;
+
+select Artist_Name,Primary_Language,Primary_Genre,Total_Streams,
