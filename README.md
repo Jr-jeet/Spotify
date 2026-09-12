@@ -155,3 +155,4 @@ from streaming ;
 select * from streaming
 
 #Which cities have high restaurant density but low delivery coverage?
+select * from city_statistics ;
