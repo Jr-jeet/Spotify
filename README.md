@@ -154,11 +154,4 @@ sum(Total_Streams) over( partition by Sex order by Total_Streams DESC rows betwe
 from streaming ;
 select * from streaming
 
-#Which cities have high restaurant density but low delivery coverage?
-select * from city_statistics ;
 
-select avg(Delivery_coverage) from city_statistics ; #(0.7855000000000001)
-select Restaurant_density , Delivery_coverage ,City
-from city_statistics
-where Delivery_coverage < 0.7855000000000001
-order by Restaurant_density DESC ;
