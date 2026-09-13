@@ -158,3 +158,4 @@ select * from streaming
 select * from city_statistics ;
 
 select avg(Delivery_coverage) from city_statistics ; #(0.7855000000000001)
+select Restaurant_density , Delivery_coverage ,City
