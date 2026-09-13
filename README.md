@@ -156,3 +156,5 @@ select * from streaming
 
 #Which cities have high restaurant density but low delivery coverage?
 select * from city_statistics ;
+
+select avg(Delivery_coverage) from city_statistics ; #(0.7855000000000001)
