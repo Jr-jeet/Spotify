@@ -157,3 +157,4 @@ select * from streaming
 use spotify ; 
 select * from streaming ;
 
+select Artist_Name,Primary_Language,Primary_Genre,Total_Streams,
