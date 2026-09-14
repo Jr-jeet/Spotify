@@ -154,4 +154,6 @@ sum(Total_Streams) over( partition by Sex order by Total_Streams DESC rows betwe
 from streaming ;
 select * from streaming
 
+use spotify ; 
+select * from streaming ;
 
