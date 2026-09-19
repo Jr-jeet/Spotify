@@ -169,3 +169,4 @@ select * from streaming ;
 
 select Artist_Name,Primary_Language,Primary_Genre,Total_Streams ,
 ntile (2) over ( partition by Sex  ) as total_stream
+from streaming ;
