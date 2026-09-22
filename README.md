@@ -160,6 +160,7 @@ select * from streaming ;
 select Artist_Name,Primary_Language,Primary_Genre,Total_Streams,
 sum(Total_Streams) over( partition by Sex order by Total_Streams DESC rows between current row and unbounded following) as total_stream
 from streaming ;
+select * from streaming ;
 
 select Artist_Name,Primary_Language,Primary_Genre,Total_Streams,
 sum(Total_Streams) over( partition by Sex order by Total_Streams DESC range between current row and 2 following) as total_stream
