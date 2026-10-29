@@ -175,3 +175,22 @@ from streaming ;
 SELECT COUNT(Artist_Name), Artist_Name
 FROM streaming
 GROUP BY Artist_Name;
+
+# power BI query
+select Artist_Name,Total_Streams
+from streaming
+where sex = 'Female'
+order by Total_Streams
+limit 10 ;
+
+select count(*),Country_of_Origin
+from streaming
+where Sex = 'Female'
+group by Country_of_Origin
+order by count(*) DESC;
+
+select count(*),Primary_Genre
+from streaming
+where sex ='Female'
+group by Primary_Genre
+order by count(*) DESC;
