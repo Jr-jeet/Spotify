@@ -176,7 +176,7 @@ SELECT COUNT(Artist_Name), Artist_Name
 FROM streaming
 GROUP BY Artist_Name;
 
-# power BI query
+# power BI Female query
 select Artist_Name,Total_Streams
 from streaming
 where sex = 'Female'
@@ -192,5 +192,25 @@ order by count(*) DESC;
 select count(*),Primary_Genre
 from streaming
 where sex ='Female'
+group by Primary_Genre
+order by count(*) DESC;
+
+# power BI male query
+
+select Artist_Name,Total_Streams
+from streaming
+where sex = 'Male'
+order by Total_Streams
+limit 10 ;
+
+select count(*),Country_of_Origin
+from streaming
+where Sex = 'Male'
+group by Country_of_Origin
+order by count(*) DESC;
+
+select count(*),Primary_Genre
+from streaming
+where sex ='Male'
 group by Primary_Genre
 order by count(*) DESC;
